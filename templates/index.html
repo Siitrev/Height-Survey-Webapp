@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>Data collector</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Collecting heights</h1>
+        <h3>Please fill entries to get population statistics on height</h3>
+        <form action="{{url_for('success')}}" method="POST">
+            <input placeholder="Enter your email here" type="email" name="email_name" required> <br>
+            <input placeholder="Eneter your height" type="number" name="height_name" min="100" max="250" step="0.1"
+                required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
