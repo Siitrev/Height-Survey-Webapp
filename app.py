@@ -1,7 +1,10 @@
 from flask import Flask, render_template, request
+import sqlalchemy
+
 
 app = Flask(__name__)
 
+class Data(sqlalchemy)
 
 @app.route("/")
 def index():
